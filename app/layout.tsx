@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Header from "./components/layout/Header";
 import "./globals.css";
 
 export const metadata = {
@@ -14,11 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className="bg-neutral-50">
-        <header className="p-4 sm:px-12 shadow">
-          <div>
-            <Image src="/logo.svg" alt="logo" width={150} height={100} />
-          </div>
-        </header>
+        <Header />
         {children}
         <footer></footer>
       </body>

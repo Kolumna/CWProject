@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
-      <section className="bg-emerald-700 h-96 px-12 gap-20 p-8 flex justify-center items-start flex-col">
-        <div className="flex flex-col gap-4">
+      <section className="bg-[url('/baner.jpg')] relative bg-cover bg-center h-96 px-12 gap-20 p-8 flex justify-center items-start flex-col">
+        <div className="flex flex-col gap-4 z-10">
           <h1 className="text-neutral-50 font-bold text-6xl uppercase">
             Dbajmy o naszą planetę
           </h1>
@@ -10,9 +12,10 @@ export default function Home() {
             Pomóż nam naprawić świat!
           </h2>
         </div>
-        <button className="bg-neutral-50 p-4 px-6 uppercase font-bold rounded-full text-emerald-700">
+        <Link href="/panel" className="bg-neutral-50 hover:bg-neutral-200 transition-colors duration-200 text-sm p-4 z-10 px-8 uppercase font-bold rounded-full text-emerald-700">
           Dołącz do nas
-        </button>
+        </Link>
+        <div className="absolute bg-green-700 w-full h-full left-0 opacity-60"></div>
       </section>
     </main>
   );
