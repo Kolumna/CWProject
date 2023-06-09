@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <body className="bg-neutral-50">
+      <body className="bg-gray-50">
         <Header />
         {children}
         <footer></footer>
