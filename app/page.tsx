@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center gap-24 justify-center px-12 py-24 bg-gray-200">
+      {/* <section className="flex flex-col items-center gap-24 justify-center px-12 py-24 bg-gray-200">
         <div className="text-5xl text-neutral-700 font-bold">
           Razem posprzątamy świat!
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
             height={200}
           />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
