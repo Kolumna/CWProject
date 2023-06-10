@@ -25,16 +25,25 @@ export default function Home() {
       <section className="flex justify-center items-center flex-col gap-36 px-12 p-8 py-24">
         <div className="text-5xl flex gap-4 justify-between w-full text-neutral-700 font-bold">
           <div className="flex flex-col w-full items-center gap-4 bg-gray-200 p-8 rounded-lg">
-            <span className="text-xl font-normal">Ilość śmieci w Polsce</span>
-            <span>1000000 kg</span>
+            <span className="text-xl font-normal">
+              Każdego roku do oceanów trafia
+            </span>
+            <span>12 milionów ton</span>
+            <span className="text-xl font-normal">plastiku</span>
           </div>
           <div className="flex flex-col w-full items-center gap-4 bg-gray-200 p-8 rounded-lg">
-            <span className="text-xl font-normal">Ilość śmieci w Polsce</span>
-            <span>1000000 kg</span>
+            <span className="text-xl font-normal">
+              Świat co roku wytwarza prawie
+            </span>
+            <span>2 miliardy ton</span>
+            <span className="text-xl font-normal">odpadów</span>
           </div>
           <div className="flex flex-col w-full items-center gap-4 bg-gray-200 p-8 rounded-lg">
-            <span className="text-xl font-normal">Ilość śmieci w Polsce</span>
-            <span>1000000 kg</span>
+            <span className="text-xl font-normal">Aż</span>
+            <span>36,8 miliardów ton</span>
+            <span className="text-xl font-normal">
+              dwutlenku węgla jest spalane co roku na świecie
+            </span>
           </div>
         </div>
       </section>
