@@ -1,15 +1,15 @@
 type PostProps = {
   title: string;
   location: string;
-  image: string;
+  className?: string;
   date: string;
 };
 
-export default function Post({ title, location, image, date }: PostProps) {
+export default function Post({ title, location, className, date }: PostProps) {
   return (
     <div className="p-4 pt-64 relative bg-gray-200 rounded-xl flex flex-col gap-4 items-center">
       <div
-        className={`bg-[url('/${image}')] bg-cover w-full h-60 absolute top-0 rounded-xl`}
+        className={`${className} bg-cover w-full h-60 absolute top-0 rounded-xl`}
       >
         <div className="absolute bottom-2 left-2 text-3xl font-bold text-white px-4 p-2 bg-emerald-500 rounded-xl">
           {date}

@@ -7,15 +7,15 @@ export default function Spotkania() {
         <Post
           title="Sprzątanie plaży"
           location="Stegna, Pomorskie"
-          image="smieci_na_plazy.jpg"
           date="10 czerwca"
+          className="bg-[url('/smieci_na_plazy.jpg')]"
         />
 
         <Post
           title="Sprzątanie gór"
           location="Zakopane, Małopolskie"
-          image="smieci_w_gorach.jpg"
           date="12 czerwca"
+          className="bg-[url('/smieci_w_gorach.jpg')]"
         />
       </div>
     </section>

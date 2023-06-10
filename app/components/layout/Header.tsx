@@ -1,13 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
-    <header className="p-4 sm:px-12 shadow flex justify-between items-center">
+    <header className="p-4 relative sm:px-12 shadow flex justify-between items-center">
       <Link href="/">
         <Image src="/logo.svg" alt="logo" width={150} height={100} />
       </Link>
-      <button>
+      <button id="burgerMenu" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -23,6 +30,15 @@ export default function Header() {
           />
         </svg>
       </button>
+      <nav
+        className={`absolute ${
+          menuOpen ? "flex" : "hidden"
+        } right-12 top-20 z-10 bg-gray-200 p-2 rounded-lg flex-col gap-2 border border-black`}
+      >
+        <Link className="p-2 px-4 hover:bg-gray-50 rounded-md" href="/panel">
+          Panel użytkownika
+        </Link>
+      </nav>
     </header>
   );
 }
